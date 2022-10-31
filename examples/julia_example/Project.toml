@@ -1,0 +1,6 @@
+[deps]
+Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+SCIP = "82193955-e24f-5292-bf16-6f2c5261a85f"
