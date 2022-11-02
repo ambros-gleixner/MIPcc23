@@ -53,7 +53,7 @@ A rough guideline for the computational properties that are interesting for the 
 Faster solution times are perfectly acceptable and not a criterion for exclusion, quite the opposite.
 Numerically difficult instances should be avoided.
 
-Deadline for submission of benchmarks is **January 31st, 2023**.
+Deadline for submission of benchmarks is **January 31st, 2023**.  Please submit to mipcc-23@htw-berlin.de and contact us there if you have any questions, since the **instances should remain hidden**.
 
 Participants in the competition may submit benchmarks themselves.  The jury will select hidden instance series carefully in order to ensure that they are suitable and different computational scenarios are represented in a balanced way.  The jury will be free to not use all submissions for the evaluation of the competition.
 
