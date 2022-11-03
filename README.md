@@ -26,7 +26,12 @@ The participants are free to build on any software that is available in source c
 
 The evaluation will be performed on a set of **instance series of 50 related instances** each satisfying:
 - The number of constraints and the number, order, and meaning of variables remain the same across one series of instances,
-- but (some or all of) objective function, variable bounds, right-hand sides, and constraint coefficients may vary.
+- but (some or all) of the following input can vary:
+  - 1. objective function coefficients,
+  - 2. variable bounds and constraint right-hand sides,
+  - 3. constraint coefficients.
+
+For each instance series it is known, which type of change may occur.  For many series, the constraint matrix will be constant.
 
 Each of the **public instance series** is taken from a specific application in the literature.
 In addition, the MIP community is called to submit further benchmarks from which we will select a set of **hidden instance series** for the final evaluation.
