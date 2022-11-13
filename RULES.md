@@ -94,8 +94,8 @@ The jury will be free to disqualify submissions that provide no contribution bey
 1. Performance evaluation is based on a set of instance series $s=1,\ldots,S$, each consisting of $i=1,\ldots,50$ MIP instances.
 
 2. Performance on a single instance $(s,i)$ is measured via the score function $f(s,i) = reltime + gap\ at\ time\ limit + nofeas$ where
-$$reltime := \frac{time\ spent}{time\ limit} \text{ iff instance is solved to optimality}, \quad\text{ and }\quad \min(1, \frac{time\ spent}{time\ limit}) \text{ otherwise}$$
-$$gap := 0 \text{ if } pb = db = 0, \quad 1 \text{ if } pb\cdot db < 0, \quad \text{and} \quad \frac{|pb-db|}{\max(|pb|,|db|)} \text{ otherwise}$$
+$$reltime := \frac{time\ spent}{time\ limit} \text{ iff instance is solved to optimality}, \quad\text{ and }\quad \max(1, \frac{time\ spent}{time\ limit}) \text{ otherwise}$$
+$$gap := 0 \text{ if } pb = db = 0, \quad 1 \text{ if } pb \text{ or } db \text{ are infinite or } pb\cdot db < 0, \quad \text{and} \quad \frac{|pb-db|}{\max(|pb|,|db|)} \text{ otherwise}$$
 $$nofeas := 1 \text{ if no feasible solution is returned}, \quad\text{ and }\quad 0 \text{ otherwise}$$
 Smaller score is better.
 If the submission exceeds the time limit, $reltime$ will be larger than 1.
