@@ -1,13 +1,16 @@
-## Solution checker
+## Simple evaluation script for MIPcc23
 
-# The checker verifies the correctness and scores a submission for an instance series.
-# Errors are thrown if something critical is missing or incorrect
+# The evaluation script verifies the correctness and scores a submission for an instance series.
+# Errors are thrown if something critical is missing or incorrect.
 
 import os
+import sys
 import datetime
 from dateutil import parser
+from tabulate import tabulate
 import pyscipopt
-import sys
+
+print("Running example evaluation script for MIPcc23 . . .\n")
 
 if len(sys.argv) < 4:
     print("Usage:")
@@ -27,7 +30,7 @@ with open(log_path) as f:
     log_lines = f.read().splitlines()
 
 
-timeout_line = ifile[0]                                                                 
+timeout_line = ifile[0]
 assert "TIMEOUT" in timeout_line
 
 timeout_value = int(timeout_line.split()[-1])
@@ -79,33 +82,60 @@ for instance in instances:
     m.setIntParam("display/verblevel", 0)
     m.readProblem(os.path.join(base_path, instance))
     sol = m.readSolFile(sol_file)
+    # note: SCIP's definition of primal feasibility is only a proxy for what will be used precisely for the competition evaluation,
+    # since it uses a combination of relative and absolute tolerance
+    m.setRealParam("numerics/feastol", 1e-5)
+    m.setRealParam("numerics/epsilon", 1e-4)
     if not m.checkSol(sol):
-        print("Warning: produced solution file for ", instance_base, " but invalid")
+        print("Warning: produced solution file for ", instance_base, " infeasible")
         results.append((instance_base, dual_bound, time_difference.total_seconds(), False, 0.0))
         continue
     primal = m.getSolObjVal(sol)
     results.append((instance_base, dual_bound, time_difference.total_seconds(), True, primal))
+    # open: verify correctness of dual bound w.r.t. ground truth
 
 
-def compute_score(dual, time_difference_secs, sol_found, primal, time_limit):
+def compute_scores(dual, time_difference_secs, sol_found, primal, time_limit):
+    scores = {}
+
     # non-optimal solutions receive full time
     if abs(primal - dual) > 1e-5:
         reltime = 1.0
+    else:
+        reltime = time_difference_secs / time_limit
+        if reltime > 1.0:
+            # we already checked for time limit excess above, within a tolerance
+            reltime = 1.0
+
     gap = 0.0
     if abs(primal - dual) > 1e-5:
-        if primal * dual < 0:
+        # high-enough values are considered infinite
+        if primal > 1e20 or dual < -1e20 or primal * dual < 0:
             gap = 1.0
         else:
             gap = abs(primal - dual) / max(abs(primal), abs(dual))
-    return reltime + gap + 1 - sol_found
 
-scores = []
-for result in results:
+    scores['reltime'] = reltime
+    scores['gap'] = gap
+    scores['nofeas'] = 1 - sol_found
+    scores['total'] = reltime + gap + 1-sol_found
+
+    return scores
+
+
+def prettyprintscores(scoredict):
+    listrep = [ ['Instance', 'reltime', 'gap', 'nofeas', 'total score'] ]
+    for instance in scoredict:
+        scores = scoredict[instance]
+        listrep.append([ instance, scores['reltime'], scores['gap'], scores['nofeas'], scores['total'] ])
+    print(tabulate(listrep))
+
+
+scores = {}
+for (instance, result) in zip(instances, results):
     (instance_base, dual, time_difference_secs, sol_found, primal) = result
-    score = compute_score(dual, time_difference_secs, sol_found, primal, timeout_value)
-    scores.append(score)
-
-print("Scores:")
-for (instance, score) in zip(instances, scores):
     instance_base = instance.split('/')[-1]
-    print(instance_base, ": ", score)
+    scores[instance_base] = compute_scores(dual, time_difference_secs, sol_found, primal, timeout_value)
+
+prettyprintscores(scores)
+print("")
