@@ -44,7 +44,7 @@ num_bound_lines = len(list(filter(lambda l: "[DUALBOUND]" in l, log_lines)))
 results = []
 
 if num_instance_lines != num_start_lines or num_instance_lines != num_end_lines or num_instance_lines != num_bound_lines:
-    raise ValueError('Inconsistent number of log lines.')
+    raise ValueError('Inconsistent log: number of lines starting with [INSTANCE], [START], [END], [DUALBOUND] are different.')
 
 for instance in instances:
     instance_base = instance.split('/')[-1]
@@ -87,7 +87,7 @@ for instance in instances:
     m.setRealParam("numerics/feastol", 1e-5)
     m.setRealParam("numerics/epsilon", 1e-4)
     if not m.checkSol(sol):
-        print("Warning: produced solution file for ", instance_base, " infeasible")
+        print("Warning: produced solution for ", instance_base, " is infeasible")
         results.append((instance_base, dual_bound, time_difference.total_seconds(), False, 0.0))
         continue
     primal = m.getSolObjVal(sol)
