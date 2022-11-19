@@ -92,28 +92,27 @@ for instance in instances:
         continue
     primal = m.getSolObjVal(sol)
     results.append((instance_base, dual_bound, time_difference.total_seconds(), True, primal))
-    # open: verify correctness of dual bound w.r.t. ground truth
 
 
 def compute_scores(dual, time_difference_secs, sol_found, primal, time_limit):
     scores = {}
 
+    # open: verify correctness of dual bound w.r.t. ground truth
+    absgap = max(primal - dual, 0.0)
+    solved = absgap <= 1e-5
+
     # non-optimal solutions receive full time
-    if abs(primal - dual) > 1e-5:
+    reltime = time_difference_secs / time_limit
+    if not solved and reltime < 1.0:
         reltime = 1.0
-    else:
-        reltime = time_difference_secs / time_limit
-        if reltime > 1.0:
-            # we already checked for time limit excess above, within a tolerance
-            reltime = 1.0
 
     gap = 0.0
-    if abs(primal - dual) > 1e-5:
+    if not solved:
         # high-enough values are considered infinite
-        if primal > 1e20 or dual < -1e20 or primal * dual < 0:
+        if primal > 1e20 or dual < -1e20 or primal * dual < 0.0:
             gap = 1.0
         else:
-            gap = abs(primal - dual) / max(abs(primal), abs(dual))
+            gap = absgap / max(abs(primal), abs(dual))
 
     scores['reltime'] = reltime
     scores['gap'] = gap
