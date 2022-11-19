@@ -1,0 +1,7 @@
+name: MIPcc23-eval
+channels:
+  - defaults
+dependencies:
+  - pyscipopt
+  - python-dateutil
+  - tabulate
