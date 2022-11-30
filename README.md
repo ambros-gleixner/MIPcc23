@@ -25,16 +25,16 @@ For each MIP instance in the series, the approach must return a **primal solutio
 The participants are free to build on any software that is available in source code and that can be used freely for the evaluation of the competition.
 
 The evaluation will be performed on a set of **instance series of 50 related instances** each satisfying:
-- The number of constraints and the number, order, and meaning of variables remain the same across one series of instances,
+- The constraints and the number, order, and meaning of variables remain the same across one series of instances,
 - but (some or all) of the following input can vary:
   - 1. objective function coefficients,
-  - 2. variable bounds and constraint right-hand sides,
-  - 3. constraint coefficients.
+  - 2. variable bounds,
+  - 3. constraint right-hand sides.
 
-For each instance series it is known, which type of change may occur.  For many series, the constraint matrix will be constant.
+For each instance series it is known, which type of change may occur.  In addition, we have also collected two instance series where part of the coefficients in the constraint matrix varies, since this is also a relevant scenario in practice and valuable for future research on this topic.  This particularly challenging case is not part of the official computational evaluation, but we are curious to learn whether there exist approaches that can be successfully applied also in this case.
 
 Each of the **public instance series** is taken from a specific application in the literature.
-In addition, the MIP community is called to submit further benchmarks from which we will select a set of **hidden instance series** for the final evaluation.
+In addition, the MIP community is called to submit further benchmarks from which we will select a set of **hidden instance series** for the final evaluation, see below.
 
 The intention of this competition is *not* to perform offline training on different types of applications, but to *reuse information from current and previous solving processes* in order to accelerate the solution of future instances.
 
@@ -55,7 +55,7 @@ A rough guideline for the computational properties that are interesting for the 
 - solvable to a gap of 10% or less within 10 minutes using an academic MIP solver,
 - solvable to zero gap (or a very small gap of 0.01%) within a few hours using any MIP solver.
 
-Faster solution times are perfectly acceptable and not a criterion for exclusion, quite the opposite.
+*Faster solution times are perfectly acceptable* and not a criterion for exclusion, quite the opposite.
 Numerically difficult instances should be avoided.
 
 Deadline for submission of benchmarks is **January 31st, 2023**.  Please submit to mipcc-23@htw-berlin.de and contact us there if you have any questions, since the **instances should remain hidden**.
@@ -111,4 +111,4 @@ To contact us directly, use the competition's email address: mipcc-23@htw-berlin
 - [Claudia D'Ambrosio](https://www.lix.polytechnique.fr/~dambrosio/), CNRS & Ecole Polytechnique (LIX)
 - [Gonzalo Muñoz](https://www.gonzalomunoz.org/), Universidad de O'Higgins
 - [Joseph Paat](https://sites.google.com/site/josephspaat/), University of British Columbia, Sauder School of Business
-- [Felipe Serrano](https://www.zib.de/members/serrano), I2DAMO
+- [Felipe Serrano](https://www.zib.de/members/serrano), Cardinal Operations
