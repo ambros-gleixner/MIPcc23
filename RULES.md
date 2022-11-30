@@ -38,10 +38,11 @@ In case participants have any doubts about the implementation of specific rules,
 All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format, through [easychair.org](https://www.easychair.org).
 Submissions will be accepted until **March 1st, 2023, at 8:00 PM EST**.
 
-All reports must include the following information:
+The report must include the following information:
 - A description of the methods developed and implemented, including any necessary citations to the literature and software used.
-- Computational results on all public instance series, which should include at least the following metrics for each series: $reltime$, $gap$, and $nofeas$ scores (as defined below) averaged over all 50 instances, and additionally over the 5 batches of instances 1 to 10, 11 to 20, 21 to 30, 31 to 40, and 41 to 50.
-- Further analysis of the computational results is welcome.
+- Computational results on the public instance series with constant constraint matrix, see (datasets/README.md)[datasets/README.md].
+- The results should include at least the following metrics for each series: $reltime$, $gap$, and $nofeas$ scores (as defined below) averaged over all 50 instances, and additionally over the 5 batches of instances 1 to 10, 11 to 20, 21 to 30, 31 to 40, and 41 to 50.
+- Further analysis of the computational results is welcome.  If the approach can be applied to the instance series with varying constraint matrix, e.g., it would be interesting to include this in the report.
 
 If the computational work was performed by students only, the participants should include a letter of attestation indicating this.
 
@@ -78,12 +79,13 @@ The solution file for an instance must not be modified anymore after moving on t
 ## Final Evaluation Criteria
 
 The evaluation will be performed by an expert jury of researchers with experience in computational optimization. They will judge both paper and code submission on two criteria:
-1. Novelty and scope: How innovative is the approach, and how general regarding type and magnitude of the changes?
-2. Computational excellence: How does the approach rank in terms of the performance score defined below.
+1. **Novelty and scope**: How innovative is the approach, and how general regarding type and magnitude of the changes?
+2. **Computational excellence**: How does the approach rank in terms of the performance score defined below.
 
-The computational evaluation of the submissions will be conducted
-- on the public instances in this repository, and
+The computational evaluation of the submissions will be conducted on instance series **with constant constraint matrix**:
+- on the public instances in this repository as described in [datasets/README.md](datasets/README.md),
 - on a set of hidden instances pre-selected by the jury.
+The hidden instance series will also feature constant constraint matrix.
 
 The spirit of this competition is to encourage the development of new methods that work in practice.
 The jury will be free to disqualify submissions that provide no contribution beyond repurposing existing software or that do not address the task to reuse information from previous solving processes for reoptimization.
