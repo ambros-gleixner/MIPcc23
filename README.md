@@ -1,7 +1,7 @@
 ![MIP Workshop 2023](mip-2023-logo.png "MIP Workshop 2023")
 # MIPcc23: The MIP Workshop 2023 Computational Competition
 
-[About](#about) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
+[About](#about) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Important Dates](#timeline) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
 
 ## <a id="about"></a>About
 
