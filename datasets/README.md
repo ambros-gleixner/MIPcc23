@@ -9,6 +9,7 @@ Depending on the series, some or all of the following input can vary:
 
 The official computational evaluation of the competition will be applied to the data sets with constant constraint coefficients, where only types 1, 2, and 3 will occur:
 - datasets/testfiles/bnd_series_1.test
+- datasets/testfiles/bnd_series_2.test
 - datasets/testfiles/obj_series_1.test
 - datasets/testfiles/obj_series_2.test
 - datasets/testfiles/rhs_obj_series_1.test
