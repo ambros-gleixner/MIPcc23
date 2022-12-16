@@ -18,7 +18,8 @@ In the following, we describe the rules and evaluation process in detail.
 - Participants may use any existing software that is available in source code and can be freely used for the evaluation.  Closed-source solvers and software that provides algorithmic functionality for optimization is forbidden.
 - The source code may be written in any programming language.
 - For the final evaluation, participants will need to compile and run their code on a Linux server.
-- The instances must be solved sequentially in the order specified by the input files. 
+- The instances of one series must be solved sequentially in the order specified by the input files.
+- It is not permitted to parse and analyze instances in one series ahead of time: while solving the $i$-th instance in the series, only information on the first $i$ instances may be used. The solution file for an instance must not be modified anymore after moving on to solve the next instance.
 - The submissions must run sequentially (1 thread), use no more than 16 GB of RAM, and respect the total time limit for each instance series.
 - Violations of the time limit for a single instance are penalized in the performance score.
 
