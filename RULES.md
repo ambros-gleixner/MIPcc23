@@ -20,7 +20,7 @@ In the following, we describe the rules and evaluation process in detail.
 - For the final evaluation, participants will need to compile and run their code on a Linux server.
 - The instances of one series must be solved sequentially in the order specified by the input files.
 - It is not permitted to parse and analyze instances in one series ahead of time: while solving the $i$-th instance in the series, only information on the first $i$ instances may be used. The solution file for an instance must not be modified anymore after moving on to solve the next instance.
-- The submissions must run sequentially (1 thread), use no more than 16 GB of RAM, and respect the total time limit for each instance series.
+- The submissions must run sequentially (1 CPU thread), use no more than 16 GB of RAM, and respect the total time limit for each instance series.
 - Violations of the time limit for a single instance are penalized in the performance score.
 
 In case participants have any doubts about the implementation of specific rules, they should not hesitate to contact the organizers, best on this repo's [discussions](https://github.com/ambros-gleixner/MIPcc23/discussions) forum.
