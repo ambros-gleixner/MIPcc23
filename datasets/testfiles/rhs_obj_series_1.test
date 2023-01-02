@@ -1,4 +1,10 @@
 [TIMEOUT] 500
+[OBJ] *
+[LO] -
+[UP] -
+[LHS] *
+[RHS] *
+[MAT] -
 datasets/vary_rhs_obj/series_1/rhs_obj_s1_i01.mps.gz
 datasets/vary_rhs_obj/series_1/rhs_obj_s1_i02.mps.gz
 datasets/vary_rhs_obj/series_1/rhs_obj_s1_i03.mps.gz

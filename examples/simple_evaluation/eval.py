@@ -34,7 +34,7 @@ timeout_line = ifile[0]
 assert "TIMEOUT" in timeout_line
 
 timeout_value = int(timeout_line.split()[-1])
-instances = ifile[1:]
+instances = ifile[7:]
 
 num_instance_lines = len(list(filter(lambda l: "[INSTANCE]" in l, log_lines)))
 num_start_lines = len(list(filter(lambda l: "[START]" in l, log_lines)))

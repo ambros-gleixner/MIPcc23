@@ -51,7 +51,15 @@ If the computational work was performed by students only, the participants shoul
 
 All programs should be executable via a shell script named `mipcomp.sh` (provided by the participants) which receives a text file as follows:
 - The first line `[TIMEOUT] t` contains the time limit of `t` seconds for solving a single instance of the series.
+- The second line starting with `[OBJ]` contains column names with varying objective function coefficients in the series.
+- The third line starting with `[LO]` contains column names with varying lower bounds in the series.
+- The fourth line starting with `[UP]` contains column names with varying upper bounds in the series.
+- The fifth line starting with `[LHS]` contains row names with varying left-hand side values in the series.
+- The sixth line starting with `[RHS]` contains row names with varying right-hand side values in the series.
+- The seventh line starting with `[MAT]` contains row names with varying constraint coefficients in the series.
 - The following 50 lines contain the paths of the instances in the series.
+
+Multiple columns and/or rows for a varying component, if any, are separated by whitespace. For ease of description, `-` denotes no variation in the component, and `*` denotes all columns and/or rows (as applicable) vary for the component.
 
 The script will be executed as `sh mipcomp.sh dataset.test` with a hard time limit of 50 times `t` times 1.1.
 

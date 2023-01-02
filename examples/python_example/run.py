@@ -17,7 +17,7 @@ if not os.path.isfile(meta_file):
     exit()
 
 # read instances from meta file
-instances = all_lines[1:len(all_lines)]
+instances = all_lines[7:len(all_lines)]
 print("number of instances:", len(instances))
 
 # read time limit from meta file

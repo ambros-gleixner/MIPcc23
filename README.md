@@ -31,7 +31,7 @@ The evaluation will be performed on a set of **instance series of 50 related ins
   - 2. variable bounds,
   - 3. constraint right-hand sides.
 
-For each instance series it is known, which type of change may occur.  In addition, we have also collected two instance series where part of the coefficients in the constraint matrix varies, since this is also a relevant scenario in practice and valuable for future research on this topic.  This particularly challenging case is not part of the official computational evaluation, but we are curious to learn whether there exist approaches that can be successfully applied also in this case.
+For each instance series, the type of change that may occur and the names of varying columns and/or rows as applicable for this type are known. In addition, we have also collected two instance series where part of the coefficients in the constraint matrix varies, since this is also a relevant scenario in practice and valuable for future research on this topic.  This particularly challenging case is not part of the official computational evaluation, but we are curious to learn whether there exist approaches that can be successfully applied also in this case.
 
 Each of the **public instance series** is taken from a specific application in the literature.
 In addition, the MIP community is called to submit further benchmarks from which we will select a set of **hidden instance series** for the final evaluation, see below.

@@ -23,7 +23,7 @@ time_limit = parse(Int, split(time_limit_line, " ")[end])
 
 base_folder = joinpath(dirname(meta_file), "../..")
 
-all_files = [joinpath(base_folder, file) for file in all_lines[2:end]]
+all_files = [joinpath(base_folder, file) for file in all_lines[8:end]]
 # verify that we have a valid path
 @assert all(isfile, all_files)
 

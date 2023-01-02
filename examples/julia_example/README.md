@@ -10,7 +10,7 @@ To run the script, from the current folder (here `julia_example`), run `julia --
 
 ## Expected interface
 
-The main program must be provided as a single shell script that takes as argument the metafile. The metafile contains the instances to solve and time limit on the first line.
+The main program must be provided as a single shell script that takes as argument the metafile. The metafile contains time limit on the first line, rows and columns of components that vary across instances on the next six lines, followed by the instances to solve.
 ```shell
 sh mipcomp.sh ../../datasets/testfiles/matrix_series_1.test
 ```

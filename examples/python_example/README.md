@@ -8,7 +8,7 @@ See the PySCIPOpt [README](https://github.com/scipopt/PySCIPOpt/).
 
 ## Expected interface
 
-The main program takes as argument the metafile. The metafile contains the instances to solve and time limit on the first line.
+The main program takes as argument the metafile. The metafile contains time limit on the first line, rows and columns of components that vary across instances on the next six lines, followed by the instances to solve.
 ```shell
 sh mipcomp.sh ../../datasets/testfiles/matrix_series_1.test
 ```
