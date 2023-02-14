@@ -111,4 +111,3 @@ To contact us directly, use the competition's email address: mipcc-23@htw-berlin
 - [Claudia D'Ambrosio](https://www.lix.polytechnique.fr/~dambrosio/), CNRS & Ecole Polytechnique (LIX)
 - [Gonzalo Muñoz](https://www.gonzalomunoz.org/), Universidad de O'Higgins
 - [Joseph Paat](https://sites.google.com/site/josephspaat/), University of British Columbia, Sauder School of Business
-- [Felipe Serrano](https://www.zib.de/members/serrano), Cardinal Operations
