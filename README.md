@@ -74,8 +74,8 @@ See the detailed description [here](RULES.md).
 - November 2022: Completion of public instance series
 - **January 31st, 2023**: Registration deadline for participation
 - January 31st, 2023: Submission deadline for hidden benchmarks
-- **March 1st, 2023**: Submission deadline for report and code
-- April 5th, 2023: Notification of results
+- **~~March 1st~~ Extended: March 15th, 2023**: Submission deadline for report and code (**10pm Pacific Daylight Time**)
+- ~~April 5th~~ April 15th, 2023: Notification of results
 - May 22nd, 2023: Presentations of the finalists at the MIP Workshop
 
 
