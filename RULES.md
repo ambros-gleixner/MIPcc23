@@ -61,7 +61,7 @@ All programs should be executable via a shell script named `mipcomp.sh` (provide
 
 Multiple columns and/or rows for a varying component, if any, are separated by whitespace. For ease of description, `-` denotes no variation in the component, and `*` denotes all columns and/or rows (as applicable) vary for the component.
 
-The script will be executed as `sh mipcomp.sh dataset.test` with a hard time limit of 50 times `t` times 1.1.
+The script will be executed as `sh mipcomp.sh /path/to/dataset.test` with a hard time limit of 50 times `t` times 1.1.
 
 The log output must contain at least the following information in this order:
 ```shell
