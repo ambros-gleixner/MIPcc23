@@ -56,15 +56,11 @@ for instance in instances:
 
     # write solution to instance_name.sol in 'solutions' directory
     if model.getNSols() > 0:
-        sol = model.getBestSol()
         with open(os.path.join(solution_folder, f"{instance_base}.sol"), 'w') as f:
-            for j in range(model.getNVars()):
-                v = model.getVars()[j]
-                name = v.name
-                val = sol[v]
-                f.write(name)
-                f.write("    ")
-                f.write(str(val))
-                f.write("\n")
+            vars = model.getVars(transformed=False)
+            for v in vars:
+                solval = model.getVal(v)
+                if solval != 0.0:
+                    f.write(v.name + "    " + str(solval) + "\n")
     else:
         print("No solution found")
