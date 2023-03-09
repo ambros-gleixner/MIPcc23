@@ -60,7 +60,7 @@ for instance in instances:
             vars = model.getVars(transformed=False)
             for v in vars:
                 solval = model.getVal(v)
-                if solval != 0.0:
+                if abs(solval) > 1e-10:
                     f.write(v.name + "    " + str(solval) + "\n")
     else:
         print("No solution found")
