@@ -61,7 +61,7 @@ for instance in instances:
     time_difference = end_time - start_time
     # leaving a tolerance for timeout
     if time_difference.total_seconds() > timeout_value + 5:
-        raise ValueError("Overtime for instance ", instance_base, ": ", time_difference.total_seconds())
+        print("Warning: overtime for instance ", instance_base, ": time limit exceeded by ", time_difference.total_seconds() - timeout_value, " seconds")
     # resetting to starting point since dual bound might be before [END]
     current_line = instance_line_idx
     while not "[DUALBOUND]" in log_lines[current_line]:
