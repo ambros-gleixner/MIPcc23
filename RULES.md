@@ -36,8 +36,8 @@ In case participants have any doubts about the implementation of specific rules,
 
 ### Report
 
-All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format, through [easychair.org](https://www.easychair.org).
-Submissions will be accepted until **March 1st, 2023, at 8:00 PM EST**.
+All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format.
+Submissions will be accepted until **March 15th, 2023, at 10:00 PM Pacific Daylight Time** (extended).
 
 The report must include the following information:
 - A description of the methods developed and implemented, including any necessary citations to the literature and software used.
