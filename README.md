@@ -111,3 +111,4 @@ To contact us directly, use the competition's email address: mipcc-23@htw-berlin
 - [Claudia D'Ambrosio](https://www.lix.polytechnique.fr/~dambrosio/), CNRS & Ecole Polytechnique (LIX)
 - [Gonzalo Muñoz](https://www.gonzalomunoz.org/), Universidad de O'Higgins
 - [Joseph Paat](https://sites.google.com/site/josephspaat/), University of British Columbia, Sauder School of Business
+- [Dimitri Thomopulos](https://people.unipi.it/dimitri_thomopulos/), Università di Pisa, DESTEC 
