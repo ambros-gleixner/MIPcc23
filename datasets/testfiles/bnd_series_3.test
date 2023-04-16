@@ -1,0 +1,57 @@
+[TIMEOUT] 600
+[OBJ] -
+[LO] *
+[UP] *
+[LHS] -
+[RHS] -
+[MAT] -
+datasets/vary_bounds/series_3/bnd_s3_i01.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i02.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i03.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i04.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i05.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i06.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i07.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i08.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i09.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i10.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i11.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i12.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i13.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i14.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i15.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i16.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i17.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i18.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i19.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i20.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i21.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i22.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i23.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i24.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i25.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i26.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i27.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i28.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i29.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i30.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i31.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i32.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i33.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i34.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i35.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i36.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i37.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i38.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i39.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i40.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i41.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i42.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i43.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i44.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i45.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i46.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i47.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i48.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i49.mps.gz
+datasets/vary_bounds/series_3/bnd_s3_i50.mps.gz
