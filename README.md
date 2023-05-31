@@ -1,7 +1,7 @@
 ![MIP Workshop 2023](mip-2023-logo.png "MIP Workshop 2023")
 # MIPcc23: The MIP Workshop 2023 Computational Competition
 
-[About](#about) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Important Dates](#timeline) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
+[About](#about) | [Results](#results) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Important Dates](#timeline) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
 
 ## <a id="about"></a>About
 
@@ -10,6 +10,19 @@ In 2022, the annual [Mixed Integer Programming Workshop](https://www.mixedintege
 In its first edition, the computational competition focused on finding good-quality primal solutions to general Mixed-Integer Linear Optimization problems.
 For the [20th anniversary MIP Workshop 2023](https://www.mixedinteger.org/2023/), the competition will focus on reoptimization of MIPs after slight changes to the input data.
 
+
+## <a id="results"></a>Results
+
+The **winner** of the competition is [Krunal Patel](https://www.krooonal.com/) with his submission "Progressively Strengthening and Tuning MIP Solvers for
+Reoptimization":
+
+*The submission convinced the jury not only through its computational excellence that was displayed by the top ranked performance on almost all public and hidden data sets, but also through its broad applicability and attention to algorithmic details. Building on top of an existing LP-based branch-and-bound solver, the approach distinguishes itself by targeting multiple aspects of the solving process in combination. The reuse of primal information and pseudo costs from previous solving processes is safeguarded by clever methods to re-evaluate and complete this information. By analyzing the success rates of individual solving techniques, the approach learns improved parameter configurations online despite the limited number of observations.*
+
+An **honorable mention** has been awarded to the team of *Paul Strang, Zacharie Ales, Come Bissuel, Olivier Juan, Safia Kedad-Sidhoum, and Emmanuel Rachelson* for their submission "Influence branching for learning to solve mixed integer programs online":
+
+*The jury was intrigued by the successful adaptation of influence branching, an existing graph-based branching strategy for MIP, to the reoptimization setting of the competition. The submission employs online hyperparameter tuning of different influence models via multi-armed bandit selection, a widely recognized online learning framework. Notably, the resulting method consistently performed well on both public and hidden datasets, showcasing its general effectiveness and potential impact.*
+
+**Congratulations from the entire organizing committee!**
 
 ## <a id="challenge"></a>The Challenge Topic: MIP Reoptimization
 
