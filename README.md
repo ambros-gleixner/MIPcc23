@@ -1,15 +1,32 @@
 ![MIP Workshop 2023](mip-2023-logo.png "MIP Workshop 2023")
 # MIPcc23: The MIP Workshop 2023 Computational Competition
 
-[About](#about) | [Results](#results) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Important Dates](#timeline) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
+[About](#about) | [Cite](#cite) | [Results](#results) | [Challenge Topic](#challenge) | [Call for Benchmarks](#benchmarks) | [Rules](#rules) | [Awards](#awards) | [Important Dates](#timeline) | [Documentation and Support](#doc) | [Organizing Committee](#committee)
 
 ## <a id="about"></a>About
 
 The computational development of optimization tools is a key component within the MIP community and has proven to be a challenging task. It requires great knowledge of the well-established methods, technical implementation abilities, as well as creativity to push the boundaries with novel solutions. 
 In 2022, the annual [Mixed Integer Programming Workshop](https://www.mixedinteger.org/) established a computational competition in order to encourage and provide recognition to the development of novel practical techniques within MIP technology.
 In its first edition, the computational competition focused on finding good-quality primal solutions to general Mixed-Integer Linear Optimization problems.
-For the [20th anniversary MIP Workshop 2023](https://www.mixedinteger.org/2023/), the competition will focus on reoptimization of MIPs after slight changes to the input data.
+For the [20th anniversary MIP Workshop 2023](https://www.mixedinteger.org/2023/), the competition has focused on reoptimization of MIPs after slight changes to the input data.
 
+## <a id="cite"></a>Cite
+
+A detailed description of the competition setup can be found in the paper
+
+> Suresh Bolusani, Mathieu Besançon, Ambros Gleixner, Timo Berthold, Claudia D'Ambrosio, Gonzalo Muñoz, Joseph Paat, Dimitri Thomopulos: [The MIP Workshop 2023 Computational Competition on Reoptimization
+](http://arxiv.org/abs/2311.14834),  [`arxiv:2311.14834`](http://arxiv.org/abs/2311.14834), Nov 2023.
+
+Please cite this paper when using data from this repository for your research:
+
+```
+@misc{MIPcc23,
+    title={The {MIP Workshop 2023} Computational Competition on Reoptimization}, 
+    author={Suresh Bolusani and Mathieu Besançon and Ambros Gleixner and Timo Berthold and Claudia D'Ambrosio and Gonzalo Muñoz and Joseph Paat and Dimitri Thomopulos},
+    year={2023},
+    url={http://arxiv.org/abs/2311.14834}
+}
+```
 
 ## <a id="results"></a>Results
 
